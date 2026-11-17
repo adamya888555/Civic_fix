@@ -37,8 +37,8 @@ export default function Home() {
 
   return (
     <main style={{ maxWidth: 720, margin: "0 auto", padding: 20 }}>
-      <h1>CivicFix</h1>
-      <p style={{ color: "#555" }}>Report local issues, upvote the ones that matter, and track their resolution.</p>
+      <h1>Ticket System</h1>
+      <p style={{ color: "#555" }}>Raise your issues and we will solve them .</p>
       {err && <p style={{ color: "#c00" }}>{err}</p>}
 
       <form onSubmit={submit} style={card}>
