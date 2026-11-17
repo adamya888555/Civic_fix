@@ -1,4 +1,4 @@
-export const metadata = { title: "CivicFix - Report local issues", description: "Crowd-sourced civic issue tracker" };
+export const metadata = { title: "Ticket system", description: "Solving every problem one at atime" };
 export default function RootLayout({ children }) {
   return (
     <html lang="en">

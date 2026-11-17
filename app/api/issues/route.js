@@ -2,7 +2,7 @@ import { getDb } from "@/lib/mongodb";
 import { NextResponse } from "next/server";
 
 export const dynamic = "force-dynamic";
-const CATS = ["Pothole", "Garbage", "Streetlight", "Water", "Other"];
+const CATS = ["Authentication", "Payment", "returns", "refunds", "Other"];
 
 export async function GET(req) {
   try {

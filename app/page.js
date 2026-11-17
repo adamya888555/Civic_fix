@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState, useCallback } from "react";
 
-const CATS = ["Pothole", "Garbage", "Streetlight", "Water", "Other"];
+const CATS = ["Authentication", "Payment", "returns", "refunds", "Other"];
 const STATUSES = ["Open", "In Progress", "Resolved"];
 const COLORS = { Open: "#d9534f", "In Progress": "#f0ad4e", Resolved: "#5cb85c" };
 const card = { background: "#fff", borderRadius: 10, padding: 14, marginBottom: 10, boxShadow: "0 1px 3px #0001" };
@@ -12,7 +12,7 @@ export default function Home() {
   const [filter, setFilter] = useState("");
   const [err, setErr] = useState("");
   const [admin, setAdmin] = useState("");
-  const [f, setF] = useState({ title: "", location: "", category: "Pothole", description: "" });
+  const [f, setF] = useState({ title: "", location: "", category: "Authentication", description: "" });
 
   const load = useCallback(async () => {
     const r = await fetch("/api/issues" + (filter ? `?category=${filter}` : ""));
